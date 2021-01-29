@@ -25,5 +25,11 @@ $(document).ready(function() {
     // $("#pizza-responses").show();
     let customerPizza = new Pizza;
     customerPizza.size = $("input:radio[name=size]:checked").val();
+    console.log(customerPizza);
+    $("input:checkbox[name=topping]:checked").each(function() {
+      let newTopping = new Topping($(this).val());
+      customerPizza.addTopping(newTopping);
+      console.log(customerPizza);
+    })
   });
 });
