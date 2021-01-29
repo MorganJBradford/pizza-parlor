@@ -22,6 +22,7 @@ function Topping(topping) {
 $(document).ready(function() {
   $("#pizza").submit(function(event) {
     event.preventDefault();
+    $("#pizza-responses").show();
   
   });
 });
