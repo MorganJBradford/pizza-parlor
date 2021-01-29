@@ -47,7 +47,18 @@ function Topping(topping) {
   this.topping = topping;
 }
 
+
 // User Interface Logic
+
+function displayToppings(pizzaToDisplay) {
+  let toppingList = $("ul#order-toppings");
+  let htmlForPizzaInfo = "";
+  Object.keys(pizzaToDisplay.toppings).forEach(function(key) {
+    const topping = pizzaToDisplay.findTopping(key);
+    htmlForPizzaInfo += "<li id=" + topping.id + ">" + topping.topping + "</li>";
+  });
+  toppingList.html(htmlForPizzaInfo);
+};
 
 $(document).ready(function() {
   $("#pizza").submit(function(event) {
@@ -61,7 +72,6 @@ $(document).ready(function() {
     })
     customerPizza.setPrice();
     $(".size").text(customerPizza.size);
-    const pp = customerPizza.findTopping(2);
-     console.log(pp);
+    displayToppings(customerPizza);
   });
 });
