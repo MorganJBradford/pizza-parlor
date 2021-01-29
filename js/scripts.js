@@ -73,5 +73,6 @@ $(document).ready(function() {
     customerPizza.setPrice();
     $(".size").text(customerPizza.size);
     displayToppings(customerPizza);
+    $(".total").text("$" + customerPizza.price);
   });
 });
