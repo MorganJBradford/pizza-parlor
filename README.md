@@ -29,8 +29,12 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 Describe: Pizza;
 test-1: "it will create an instance of the object Pizza"
-Expect(new Pizza).toEqual(Pizza {customizations: {...}})
- 
+Expect(new Pizza).toEqual(Pizza {toppings: {...}, size: {...}})
+
+Describe Topping;
+test-1: "it will create an instance of the object Topping"
+Expect(new Topping("pepperoncini")toEqual(Topping {topping: "pepperoncini"}))
+
 ## Known Bugs
 
 * _Any known issues_
