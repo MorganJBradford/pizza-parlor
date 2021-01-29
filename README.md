@@ -31,6 +31,10 @@ Describe: Pizza;
 test-1: "it will create an instance of the object Pizza"
 Expect(new Pizza).toEqual(Pizza {toppings: {...}, size: {...}})
 
+test-2: "it will add a Topping object in Pizza.toppings"
+Expect(customerPizza.addTopping(newTopping).toEqual(toppings:
+pepperoncini: Topping {topping: "pepperoncini"}))
+
 Describe Topping;
 test-1: "it will create an instance of the object Topping"
 Expect(new Topping("pepperoncini")toEqual(Topping {topping: "pepperoncini"}))
