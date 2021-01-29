@@ -13,21 +13,31 @@ Pizza.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
 }
+
 Pizza.prototype.setPrice = function(customerPizza) {
+  for (let i = 0; i <= this.currentId; i++) {
+    if (i > 3) {
+    this.price += 0.5;
+    };
+  };
   if (this.size === "personal") {
     this.price += 7.99;
     return
   } else if (this.size === "small") {
-    this.price += 10.99;
+    this.price += 9.99;
     return
   } else if (this.size === "medium") {
-    this.price += 12.99;
+    this.price += 11.99;
+    return
+  } else if (this.size === "large") {
+    this.price += 13.50;
     return
   } else {
-    this.price += 14.99
-    return
-  }
-}
+    return false
+  };
+};
+
+
 // Business Logic for Topping
 function Topping(topping) {
   this.topping = topping;

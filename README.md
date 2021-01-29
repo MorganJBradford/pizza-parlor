@@ -41,7 +41,10 @@ Expect(customerPizza.addTopping(newTopping).toEqual(toppings:
 1: Topping {topping: "pepperoncini", id: 1}))
 
 Test-4: "it will adjust the value for Pizza.cost according to the size of pizza selected"
-Expect(customerPizza(this.size: "personal")).toEqual(Pizza {toppings: {…}, size: "personal", price: 7.99, currentId: 0})
+Expect(customerPizza(this.size: "personal";)).toEqual(Pizza {toppings: {…}, size: "personal", price: 7.99, currentId: 0})
+
+Test-4 "it will adjust the value of Pizza.cost according to the amount of toppings added to the pizza"
+Expect(customerPizza(this.size: "personal"; this.currentId: 5;).toEqual(Pizza {toppings: {…}, size: "personal", price: 8.99, currentId: 5}))
 
 Describe Topping;
 test-1: "it will create an instance of the object Topping"
