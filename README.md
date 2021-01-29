@@ -46,6 +46,9 @@ Expect(customerPizza(this.size: "personal";)).toEqual(Pizza {toppings: {…}, s
 Test-4 "it will adjust the value of Pizza.cost according to the amount of toppings added to the pizza"
 Expect(customerPizza(this.size: "personal"; this.currentId: 5;).toEqual(Pizza {toppings: {…}, size: "personal", price: 8.99, currentId: 5}))
 
+Test-5: "it will locate a Pizza.topping via the id associated with the topping"
+Expect(customerPizza.findTopping(2)).toEqual(Topping {topping: "mushrooms", id: 2})
+
 Describe Topping;
 test-1: "it will create an instance of the object Topping"
 Expect(new Topping("pepperoncini")toEqual(Topping {topping: "pepperoncini"}))

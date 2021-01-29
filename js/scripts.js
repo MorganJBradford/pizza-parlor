@@ -13,7 +13,12 @@ Pizza.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
 }
-
+Pizza.prototype.findTopping = function(id) {
+  if (this.toppings[id] != undefined) {
+    return this.toppings[id];
+  }
+  return false;
+}
 Pizza.prototype.setPrice = function(customerPizza) {
   for (let i = 0; i <= this.currentId; i++) {
     if (i > 3) {
@@ -37,7 +42,6 @@ Pizza.prototype.setPrice = function(customerPizza) {
   };
 };
 
-
 // Business Logic for Topping
 function Topping(topping) {
   this.topping = topping;
@@ -48,7 +52,7 @@ function Topping(topping) {
 $(document).ready(function() {
   $("#pizza").submit(function(event) {
     event.preventDefault();
-    // $("#pizza-responses").show();
+    $("#pizza-responses").show();
     let customerPizza = new Pizza;
     customerPizza.size = $("input:radio[name=size]:checked").val();
     $("input:checkbox[name=topping]:checked").each(function() {
@@ -56,6 +60,8 @@ $(document).ready(function() {
       customerPizza.addTopping(newTopping);
     })
     customerPizza.setPrice();
-    console.log(customerPizza);
+    $(".size").text(customerPizza.size);
+    const pp = customerPizza.findTopping(2);
+     console.log(pp);
   });
 });
