@@ -16,3 +16,12 @@ Pizza.prototype.assignId = function() {
 function Topping(topping) {
   this.topping = topping;
 }
+
+// User Interface Logic
+
+$(document).ready(function() {
+  $("#pizza").submit(function(event) {
+    event.preventDefault();
+  
+  });
+});
