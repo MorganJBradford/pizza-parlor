@@ -5,7 +5,12 @@ function Pizza() {
   this.currentId = 0;
 }
 Pizza.prototype.addTopping = function(topping) {
-  this.toppings[topping.topping] = topping;
+  topping.id = this.assignId();
+  this.toppings[topping.id] = topping;
+}
+Pizza.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
 }
 // Business Logic for Topping
 function Topping(topping) {

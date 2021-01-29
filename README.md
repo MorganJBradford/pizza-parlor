@@ -35,6 +35,10 @@ test-2: "it will add a Topping object in Pizza.toppings"
 Expect(customerPizza.addTopping(newTopping).toEqual(toppings:
 pepperoncini: Topping {topping: "pepperoncini"}))
 
+Test-3: "it will increment Pizza.currentId by 1 when addTopping is called, then add the returned id to the topping added"
+Expect(customerPizza.addTopping(newTopping).toEqual(toppings:
+1: Topping {topping: "pepperoncini", id: 1}))
+
 Describe Topping;
 test-1: "it will create an instance of the object Topping"
 Expect(new Topping("pepperoncini")toEqual(Topping {topping: "pepperoncini"}))
