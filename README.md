@@ -18,13 +18,42 @@ _A website for Picazzo's Pizza_
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+1. Clone this repository from GitHub
+2. Navigate to the top directory
+2. Use your favorite browser to open index.html
+3. Select the size size of pizza you would like
+4. Select the toppings you would like on your pizza
+5. Click "Submit order," review your order.
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+Details: using terminal, navigate to the directory you would like to download this directory to. For this example we will be navigating to desktop. For any commands, type what is in between the 'single' quotation marks. To navigate to desktop, type 'cd ~/desktop'. To confirm your location enter 'pwd'. You should receive a message similar to "/c/Users/vampi/desktop" in this instance my location translates to "/hard drive c/Users folder/user/desktop". The last entry "desktop" is my current directory, and just happens to be inside of the other directories previously listed.
+
+Note: If you have a directory named pizza-parlor located here before using this next command, you may run into issues. To see a list of directories in your current location enter 'ls' in the terminal.
+
+Next, enter the following command 'git clone https://github.com/MorganJBradford/pizza-parlord.git'
+
+The terminal should return with something similar to:
+
+Cloning into 'pizza-parlor'...
+
+remote: Enumerating objects: 94, done.
+
+remote: Counting objects: 100% (94/94), done.
+
+remote: Compressing objects: 100% (62/62), done.
+
+remote: Total 94 (delta 41), reused 82 (delta 29), pack-reused 0
+
+Receiving objects: 100% (94/94), 119.48 KiB | 1.05 MiB/s, done.
+
+Resolving deltas: 100% (41/41), done.
+
+Next enter the command "ls" which should return with a list of files and directories. Mine returned with:
+
+desktop.ini icebreaker/ portfolio/ pizza-parlor/
+
+Because I did not have a directory named pizza-parlor, I know it downloaded successfully. Now you should have an icon for the directory named pizza-parlor on your desktop background. Double click on the icon, this should open the directory. Right click on "index.html" select open, or select open with if you have multiple web browsers and would like to use a specific one.
+
+ Select the size size of pizza you would like. Select the toppings you would like on your pizza. Click "Submit order," review your order.
 
 ## Specifications
 
@@ -55,8 +84,7 @@ Expect(new Topping("pepperoncini")toEqual(Topping {topping: "pepperoncini"}))
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No error message if to size is selected_
 
 ## License
 
