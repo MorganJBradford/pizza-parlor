@@ -3,8 +3,27 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: relative;
+  color: black;
 }
 #pizza-responses {
   display: none;
+}
+/* .container {
+  background-color: rgba(155, 18, 29, 0.4);
+  border: 2px solid black;
+} */
+.container {
+  background: url(../img/pexels-photo-268349.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+}
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color:   rgba(155, 18, 29, 0.4);
+  border-radius: .3rem;
+  border: 2px solid black;
 }
