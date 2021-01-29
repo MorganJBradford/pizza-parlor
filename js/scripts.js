@@ -22,7 +22,8 @@ function Topping(topping) {
 $(document).ready(function() {
   $("#pizza").submit(function(event) {
     event.preventDefault();
-    $("#pizza-responses").show();
-  
+    // $("#pizza-responses").show();
+    let customerPizza = new Pizza;
+    customerPizza.size = $("input:radio[name=size]:checked").val();
   });
 });
