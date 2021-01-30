@@ -88,7 +88,8 @@ Expect(new Topping("pepperoncini")toEqual(Topping {topping: "pepperoncini"}))
 
 ## Known Bugs
 
-* _No error message if to size is selected_
+* _No error message if no size is selected_
+* _Menu displayed over main background image_
 
 ## License
 
