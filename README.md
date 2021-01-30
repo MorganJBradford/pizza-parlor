@@ -57,6 +57,10 @@ Because I did not have a directory named pizza-parlor, I know it downloaded succ
 
 ## Specifications
 
+Describe: Order;
+test: "it will create an instance of the object Order"
+Expect(new Order).toEqual(Order {pizzas: {…}, currentId: 0})
+
 Describe: Pizza;
 test-1: "it will create an instance of the object Pizza"
 Expect(new Pizza).toEqual(Pizza {toppings: {...}, size: {...}})
