@@ -21,9 +21,10 @@ _A website for Picazzo's Pizza_
 1. Clone this repository from GitHub
 2. Navigate to the top directory
 2. Use your favorite browser to open index.html
-3. Select the size size of pizza you would like
-4. Select the toppings you would like on your pizza
-5. Click "Submit order," review your order.
+3. Click "Pick-up"
+4. Select the size size of pizza you would like
+5. Select the toppings you would like on your pizza
+6. Click "Submit order," review your order.
 
 Details: using terminal, navigate to the directory you would like to download this directory to. For this example we will be navigating to desktop. For any commands, type what is in between the 'single' quotation marks. To navigate to desktop, type 'cd ~/desktop'. To confirm your location enter 'pwd'. You should receive a message similar to "/c/Users/vampi/desktop" in this instance my location translates to "/hard drive c/Users folder/user/desktop". The last entry "desktop" is my current directory, and just happens to be inside of the other directories previously listed.
 
@@ -53,13 +54,9 @@ desktop.ini icebreaker/ portfolio/ pizza-parlor/
 
 Because I did not have a directory named pizza-parlor, I know it downloaded successfully. Now you should have an icon for the directory named pizza-parlor on your desktop background. Double click on the icon, this should open the directory. Right click on "index.html" select open, or select open with if you have multiple web browsers and would like to use a specific one.
 
- Select the size size of pizza you would like. Select the toppings you would like on your pizza. Click "Submit order," review your order.
+ Click pick-up. Select the size size of pizza you would like. Select the toppings you would like on your pizza. Click "Submit order," review your order.
 
 ## Specifications
-
-Describe: Order;
-test: "it will create an instance of the object Order"
-Expect(new Order).toEqual(Order {pizzas: {…}, currentId: 0})
 
 Describe: Pizza;
 test-1: "it will create an instance of the object Pizza"
@@ -88,7 +85,7 @@ Expect(new Topping("pepperoncini")toEqual(Topping {topping: "pepperoncini"}))
 
 ## Known Bugs
 
-* _No error message if no size is selected_
+* _No error message if size is not selected_
 * _Menu img does not extend down the page when you click "Submit order"_
 
 ## License
