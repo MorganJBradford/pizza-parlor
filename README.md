@@ -89,7 +89,7 @@ Expect(new Topping("pepperoncini")toEqual(Topping {topping: "pepperoncini"}))
 ## Known Bugs
 
 * _No error message if no size is selected_
-* _Menu img does not extend down the page when you click "Submit order"
+* _Menu img does not extend down the page when you click "Submit order"_
 
 ## License
 
