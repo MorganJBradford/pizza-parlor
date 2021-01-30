@@ -39,3 +39,21 @@ body {
   left: 380px;
   width: 60%
 }
+.center-text {
+  text-align: center;
+}
+#pick-up, #delivery {
+  background: black;
+  color: white;
+  height: 200px;
+  width: 350px;
+  font-size: 50px;
+}
+.center-text p {
+  font-size: 40px;
+  color: white;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke: black;
+  -moz-text-stroke-width: 1px;
+}
