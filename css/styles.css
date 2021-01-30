@@ -8,7 +8,7 @@ body {
 }
 .pick-up {
   background: url(../img/pexels-photo-268349.jpeg);
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-position: center;
   height: 950px;
@@ -37,15 +37,26 @@ body {
 }
 .left {
   position: relative;
-  left: 380px;
-  top: 200px;
+  left: 420px;
+  top: 170px;
   width: 60%;
+  padding: 20px 40px;
 }
-
+label {
+  padding: 0 10px 10px 0;
+}
+.emphasis {
+  font-size: large;
+  font-weight: 500;
+  padding-top: 20px;
+}
+.sub-btn {
+  margin: 20px 0;
+}
 .center-text {
   text-align: center;
 }
-#pick-up, #delivery {
+#pick-up-btn, #delivery-btn {
   background: black;
   color: white;
   height: 200px;
