@@ -9,21 +9,30 @@ body {
 #pizza-responses {
   display: none;
 }
-.container {
+/* .container {
   background: url(../img/pexels-photo-268349.jpeg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   height: 1000px;
+} */
+.hide {
+  display: none;
 }
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   border-radius: .3rem;
   margin: 0 auto 60px auto;
-  background-color: rgb(0, 0, 0);
+  background: url(../img/1_8b97vFPq25XMKSyUUGDbhA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 74%;
   color: white;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke: black;
+  -moz-text-stroke-width: 2px;
 }
 .left {
   position: relative;
