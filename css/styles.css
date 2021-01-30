@@ -6,16 +6,17 @@ body {
   background-position: relative;
   color: black;
 }
-#pizza-responses {
-  display: none;
-}
-/* .container {
+.pick-up {
   background: url(../img/pexels-photo-268349.jpeg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  height: 1000px;
-} */
+  height: 950px;
+  color: black;
+  }
+#pizza-responses {
+  display: none;
+}
 .hide {
   display: none;
 }
@@ -37,8 +38,10 @@ body {
 .left {
   position: relative;
   left: 380px;
-  width: 60%
+  top: 200px;
+  width: 60%;
 }
+
 .center-text {
   text-align: center;
 }
@@ -49,6 +52,10 @@ body {
   width: 350px;
   font-size: 50px;
 }
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
 .center-text p {
   font-size: 40px;
   color: white;
