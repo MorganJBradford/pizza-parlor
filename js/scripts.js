@@ -1,9 +1,4 @@
 // Business Logic for Pizza
-function Order() {
-  this.pizzas = {}
-  this.currentId = 0;
-}
-
 function Pizza() {
   this.toppings = {};
   this.size = {};
@@ -24,7 +19,7 @@ Pizza.prototype.findTopping = function(id) {
   }
   return false;
 }
-Pizza.prototype.setPrice = function(customerPizza) {
+Pizza.prototype.setPrice = function() {
   for (let i = 0; i <= this.currentId; i++) {
     if (i > 3) {
     this.price += 0.5;
