@@ -1,7 +1,7 @@
 // Business Logic for Pizza
-function Pizza() {
+function Pizza(size) {
   this.toppings = {};
-  this.size = {};
+  this.size = size;
   this.price = 0;
   this.currentId = 0;
 }
@@ -64,8 +64,7 @@ $(document).ready(function() {
   $("#pizza").submit(function(event) {
     event.preventDefault();
     $("#pizza-responses").show();
-    let customerPizza = new Pizza;
-    customerPizza.size = $("input:radio[name=size]:checked").val();
+    let customerPizza = new Pizza($("input:radio[name=size]:checked").val());
     $("input:checkbox[name=topping]:checked").each(function() {
       let newTopping = new Topping($(this).val());
       customerPizza.addTopping(newTopping);
